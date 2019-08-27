@@ -10,7 +10,7 @@ export const InputColorPicker = (props) => {
             </div>
         </div>
         <div className={'row'}>
-            {props.input ? <div className={'col-10'}>
+            {props.input ? <div className={'col-10'} style={{paddingRight: 0}}>
                 <input className={'form-control titleInput'} value={props.text}
                        onChange={props.onChangeText}/>
             </div> : null}

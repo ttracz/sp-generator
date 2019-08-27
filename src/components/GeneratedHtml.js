@@ -18,7 +18,7 @@ export default class GeneratedHtml extends Component {
                         <ul className="navbar-nav text-uppercase ml-auto">
                             {this.props.navLinks.map((item, index) => {
                                 return <li className="nav-item">
-                                    <a className="nav-link js-scroll-trigger" href="#services">Services</a>
+                                    <a className="nav-link js-scroll-trigger" href={item.url} style={{color: this.props.linkColor}}>{item.nazwa}</a>
                                 </li>
                             })}
                         </ul>

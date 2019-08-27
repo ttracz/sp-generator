@@ -1,5 +1,5 @@
 import React from 'react'
-import {BlockPicker} from "react-color";
+import {BlockPicker, GithubPicker, SketchPicker} from "react-color";
 import './ColorPicker.css'
 
 export const ColorPicker = (props) => {
@@ -11,6 +11,7 @@ export const ColorPicker = (props) => {
         color: {
             width: '28px',
             height: '28px',
+            border: '1px solid #cccccc',
             borderRadius: '25px',
             background: `${color}`,
         },
@@ -29,7 +30,7 @@ export const ColorPicker = (props) => {
         </div>
         {colorPicker ? <div className={'colorPickerContainer'}>
             <div className={'colorPickerBlock'} onClick={() => showColorPicker(false)}/>
-            <BlockPicker
+            <SketchPicker
                 color={props.color}
                 onChangeComplete={e => {
                     setColor(e.hex);

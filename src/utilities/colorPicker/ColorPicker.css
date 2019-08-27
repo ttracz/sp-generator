@@ -8,5 +8,6 @@
 
 .colorPickerContainer {
     position: absolute;
+    left: -5px;
     z-index: 2
 }

@@ -1,3 +1,25 @@
-.inputColorPicker label {
+label {
     font-size: 0.875rem;
+}
+
+button {
+    height: 38px;
+}
+
+.ReactModal__Content {
+    margin: 0 auto;
+    width: 60%;
+    bottom: auto !important;
+}
+
+.linkInput .deleteLink {
+    line-height: 38px;
+}
+
+.linkInput .link {
+    margin-top: 10px;
+}
+
+.linkInput .buttonContainer {
+    margin-top: 15px;
 }
