@@ -1,5 +1,5 @@
 import React from 'react'
-import {ColorPicker} from "../../../utilities/colorPicker/ColorPicker";
+import {ColorPicker} from "../../utilities/colorPicker/ColorPicker";
 
 export const InputColorPicker = (props) => {
 

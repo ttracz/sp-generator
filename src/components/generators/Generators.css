@@ -6,6 +6,19 @@ button {
     height: 38px;
 }
 
+.generatorContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    background: #eaeaea;
+    box-shadow: -2px -2px 3px #00000050;
+}
+
+.ReactModal__Overlay {
+    z-index: 1050;
+}
+
 .ReactModal__Content {
     margin: 0 auto;
     width: 60%;
@@ -22,4 +35,8 @@ button {
 
 .linkInput .buttonContainer {
     margin-top: 15px;
+}
+
+input[type=checkbox] {
+    margin-left: 5px;
 }

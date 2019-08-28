@@ -18,7 +18,7 @@ export const ColorPicker = (props) => {
         swatch: {
             padding: '5px',
             marginLeft: '15px',
-            background: '#fff',
+            background: 'transparent',
             display: 'inline-block',
             cursor: 'pointer',
         },
