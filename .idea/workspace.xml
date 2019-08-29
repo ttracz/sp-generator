@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75bf9bb-4e23-4b09-89f2-667f8cc99c8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/generators/carouselGenerator/SlideInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/generators/ShowHideBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GeneratedHtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GeneratedHtml.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Generator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/generators/Generators.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/Generators.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" afterDir="false" />
@@ -103,7 +99,7 @@
       <updated>1566895101645</updated>
       <workItem from="1566895104667" duration="14260000" />
       <workItem from="1566971960542" duration="15440000" />
-      <workItem from="1567058739374" duration="1979000" />
+      <workItem from="1567058739374" duration="3091000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1566904483843</created>
@@ -126,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566985219178</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added dynamic font change">
+      <created>1567066062454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567066062454</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +152,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Navbar generator prealpha" />
     <MESSAGE value="Carousel (one item only)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carousel (one item only)" />
+    <MESSAGE value="Added dynamic font change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic font change" />
   </component>
 </project>

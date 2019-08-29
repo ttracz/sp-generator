@@ -10,7 +10,7 @@ export const CarouselGen = (props) => {
     const [modal, modalOpen] = React.useState(false)
 
     return (
-        <div className={'generatorContainer'}>
+        <>
             <Modal
                 isOpen={modal}
                 onRequestClose={()=>modalOpen(false)}
@@ -58,7 +58,7 @@ export const CarouselGen = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -4,6 +4,7 @@ import {InputColorPicker} from "../InputColorPicker";
 import LinkInput from "./LinkInput";
 import Modal from 'react-modal'
 import Select from 'react-select'
+import {ShowHideBar} from "../ShowHideBar";
 
 export const NavBarGen = (props) => {
 
@@ -42,7 +43,7 @@ export const NavBarGen = (props) => {
     }
 
     return (
-        <div className={'generatorContainer'}>
+        <>
             <Modal
                 isOpen={linkModal}
                 onRequestClose={() => openLinkModal(false)}
@@ -111,7 +112,7 @@ export const NavBarGen = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
