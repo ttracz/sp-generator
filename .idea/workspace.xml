@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75bf9bb-4e23-4b09-89f2-667f8cc99c8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/generators/carouselGenerator/SlideInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GeneratedHtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GeneratedHtml.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Generator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/generators/Generators.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/Generators.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/generators/navbarGenerator/InputColorPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/InputColorPicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/generators/navbarGenerator/NavBarGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/navbarGenerator/NavBarGen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/colorPicker/ColorPicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/colorPicker/ColorPicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/colorPicker/ColorPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/colorPicker/ColorPicker.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1566895101645</updated>
       <workItem from="1566895104667" duration="14260000" />
-      <workItem from="1566971960542" duration="7556000" />
+      <workItem from="1566971960542" duration="15440000" />
+      <workItem from="1567058739374" duration="1979000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1566904483843</created>
@@ -117,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566911838682</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Carousel (one item only)">
+      <created>1566985219178</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566985219178</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +148,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Navbar generator prealpha" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navbar generator prealpha" />
+    <MESSAGE value="Carousel (one item only)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carousel (one item only)" />
   </component>
 </project>

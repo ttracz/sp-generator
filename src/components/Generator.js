@@ -16,7 +16,12 @@ export const Generator = () => {
     const [linkColor, setLinkColor] = React.useState('#000000')
     const [navLinks, setNavLinks] = React.useState([{nazwa: 'Link1', url: '#'}, {nazwa: 'Link2', url: '#'}])
     const [navbarFixed, setNavbarFixed] = React.useState("fixed-top")
-    const [carouselImage, setCarouselImage] = React.useState('https://via.placeholder.com/1920x600?text=Sample+image')
+    const [uppercase, setUppercase] = React.useState('')
+    const [fontFamily, setFontFamily] = React.useState('')
+    const [carouselImages, setCarouselImages] = React.useState([
+        {image: 'https://via.placeholder.com/1920x600?text=Sample+image', title: 'Tytuł...', description: 'Przykładowy opis...'},
+        {image: 'https://via.placeholder.com/1920x600?text=Sample+image2', title: 'Tytuł 2...', description: 'Przykładowy opis 2...'}
+        ])
     const [carouselCaptionPrimary, setCarouselCaptionPrimary] = React.useState('Tytuł')
     const [carouselCaptionSecondary, setCarouselCaptionSecondary] = React.useState('Opis przykładowy...')
     const [carouselCaptionColor, setCarouselCaptionColor] = React.useState('#000000')
@@ -36,7 +41,9 @@ export const Generator = () => {
                                                  navLinks={navLinks}
                                                  linkColor={linkColor}
                                                  navbarFixed={navbarFixed}
-                                                 carouselImage={carouselImage}
+                                                 uppercase={uppercase}
+                                                 fontFamily={fontFamily}
+                                                 carouselImages={carouselImages}
                                                  carouselCaptionPrimary={carouselCaptionPrimary}
                                                  carouselCaptionSecondary={carouselCaptionSecondary}
                                                  carouselCaptionColor={carouselCaptionColor}
@@ -51,17 +58,23 @@ export const Generator = () => {
                                                linkColor={linkColor}
                                                setNavLinks={e => {
                                                    setNavLinks(e);
-                                                   console.log(e);
                                                    setReload()
                                                }}
                                                navLinks={navLinks}
                                                navbarFixed={navbarFixed}
                                                setNavbarFixed={e => setNavbarFixed(e)}
+                                               uppercase={uppercase}
+                                               setUppercase={e => setUppercase(e)}
+                                               fontFamily={fontFamily}
+                                               setFontFamily={e => setFontFamily(e)}
                                                setGeneratorStage={e => setGeneratorStage(e)}
                                                generatorStage={generatorStage}
             /> : null}
-            {generatorStage === 1 ? <CarouselGen carouselImage={carouselImage}
-                                                 setCarouselImage={e => setCarouselImage(e)}
+            {generatorStage === 1 ? <CarouselGen carouselImages={carouselImages}
+                                                 setCarouselImages={e => {
+                                                     setCarouselImages(e);
+                                                     setReload()
+                                                 }}
                                                  carouselCaptionPrimary={carouselCaptionPrimary}
                                                  setCarouselCaptionPrimary={e => setCarouselCaptionPrimary(e)}
                                                  carouselCaptionSecondary={carouselCaptionSecondary}
