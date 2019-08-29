@@ -35,7 +35,7 @@ export default class GeneratedHtml extends Component {
                         </div>
                     </div>
                 </nav>
-                <div id="Carousel" className="carousel slide" data-ride="carousel">
+                <div id="Carousel" className="carousel slide" data-ride={this.props.carouselAutoSlide ? "carousel" : ""} data-interval={this.props.carouselInterval}>
                     <div className="carousel-inner">
                         {this.props.carouselImages.map((item, index) => {
                             if (index === 0) {

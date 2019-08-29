@@ -35,6 +35,8 @@ export const Generator = () => {
     const [carouselCaptionPrimary, setCarouselCaptionPrimary] = React.useState('Tytuł')
     const [carouselCaptionSecondary, setCarouselCaptionSecondary] = React.useState('Opis przykładowy...')
     const [carouselCaptionColor, setCarouselCaptionColor] = React.useState('#000000')
+    const [carouselAutoSlide, setCarouselAutoSlide] = React.useState(true)
+    const [carouselInterval, setCarouselInterval] = React.useState("2000")
 
     const setReload = () => {
         setLoader(true)
@@ -57,6 +59,8 @@ export const Generator = () => {
                                                  carouselCaptionPrimary={carouselCaptionPrimary}
                                                  carouselCaptionSecondary={carouselCaptionSecondary}
                                                  carouselCaptionColor={carouselCaptionColor}
+                                                 carouselAutoSlide={carouselAutoSlide}
+                                                 carouselInterval={carouselInterval}
             />}
             <div className={hidden ? 'generatorContainer generatorContainerHidden' : 'generatorContainer'}>
                 <ShowHideBar hidden={hidden} setHidden={e => setHidden(e)}/>
@@ -93,6 +97,16 @@ export const Generator = () => {
                                                      setCarouselCaptionSecondary={e => setCarouselCaptionSecondary(e)}
                                                      carouselCaptionColor={carouselCaptionColor}
                                                      setCarouselCaptionColor={e => setCarouselCaptionColor(e)}
+                                                     carouselAutoSlide={carouselAutoSlide}
+                                                     setCarouselAutoSlide={e => {
+                                                         setCarouselAutoSlide(e);
+                                                         setReload()
+                                                     }}
+                                                     carouselInterval={carouselInterval}
+                                                     setCarouselInterval={e => {
+                                                         setCarouselInterval(e);
+                                                         setReload()
+                                                     }}
                                                      setGeneratorStage={e => setGeneratorStage(e)}
                                                      generatorStage={generatorStage}
                 /> : null}

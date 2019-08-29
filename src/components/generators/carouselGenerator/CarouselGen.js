@@ -4,10 +4,17 @@ import Modal from 'react-modal'
 import {InputColorPicker} from "../InputColorPicker";
 import LinkInput from "../navbarGenerator/LinkInput";
 import SlideInput from "./SlideInput";
+import Select from "react-select";
 
 export const CarouselGen = (props) => {
 
     const [modal, modalOpen] = React.useState(false)
+    const options = [
+        {value: '1000', label: '1s'},
+        {value: '2000', label: '2s'},
+        {value: '3000', label: '3s'},
+        {value: '4000', label: '4s'},
+    ]
 
     return (
         <>
@@ -45,10 +52,18 @@ export const CarouselGen = (props) => {
                         </button>
                     </div>
                 </div>
-                <div className={'col-7'}>
-                    <div><label>&nbsp;</label></div>
-                    <div><label>&nbsp;</label></div>
-                    <div><label>&nbsp;</label></div>
+                <div className={'col-2'}>
+                    <label>Interwał slajdu:</label>
+                    <Select menuPlacement="top" placeholder={'Wybierz czcionkę...'}
+                            options={options}
+                            defaultValue={options[1]}
+                            onChange={(e)=>props.setCarouselInterval(e.value)}/>
+                </div>
+                <div className={'col-5'}>
+                    <label>Automatyczne przewijanie:</label><input type={'checkbox'} checked={props.carouselAutoSlide}
+                                                                      onClick={() => props.setCarouselAutoSlide(!props.carouselAutoSlide)}/>
+                    <label>&nbsp;</label>
+                    <label>&nbsp;</label>
                 </div>
                 <div className={'col-1'}>
                     <div className={'text-right'}>

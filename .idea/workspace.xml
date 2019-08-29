@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75bf9bb-4e23-4b09-89f2-667f8cc99c8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/generators/ShowHideBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GeneratedHtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GeneratedHtml.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/generators/Generators.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/Generators.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/generators/ShowHideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/ShowHideBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/generators/navbarGenerator/NavBarGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/navbarGenerator/NavBarGen.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,8 @@
       <updated>1566895101645</updated>
       <workItem from="1566895104667" duration="14260000" />
       <workItem from="1566971960542" duration="15440000" />
-      <workItem from="1567058739374" duration="3091000" />
+      <workItem from="1567058739374" duration="6245000" />
+      <workItem from="1567080166855" duration="3487000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1566904483843</created>
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567066062454</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Toggleable generator">
+      <created>1567067177416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567067177416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +160,7 @@
     <MESSAGE value="Navbar generator prealpha" />
     <MESSAGE value="Carousel (one item only)" />
     <MESSAGE value="Added dynamic font change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic font change" />
+    <MESSAGE value="Toggleable generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Toggleable generator" />
   </component>
 </project>
