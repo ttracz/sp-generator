@@ -5,6 +5,7 @@ import {NavBarGen} from "./generators/navbarGenerator/NavBarGen";
 import {Loader} from "../utilities/loader/Loader";
 import {CarouselGen} from "./generators/carouselGenerator/CarouselGen";
 import {ShowHideBar} from "./generators/ShowHideBar";
+import {AboutGen} from "./generators/aboutGenerator/AboutGen";
 
 export const Generator = () => {
 
@@ -109,6 +110,9 @@ export const Generator = () => {
                                                      }}
                                                      setGeneratorStage={e => setGeneratorStage(e)}
                                                      generatorStage={generatorStage}
+                /> : null}
+                {generatorStage === 2 ? <AboutGen setGeneratorStage={e => setGeneratorStage(e)}
+                                                  generatorStage={generatorStage}
                 /> : null}
             </div>
         </div>

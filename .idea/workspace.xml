@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75bf9bb-4e23-4b09-89f2-667f8cc99c8f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/generators/aboutGenerator/AboutGen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GeneratedHtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GeneratedHtml.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/generators/ShowHideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/ShowHideBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +33,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/generators/carouselGenerator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/generators/aboutGenerator" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -46,17 +45,18 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\carouselGenerator" />
-      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\utilities" />
-      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\przyklad-html" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators" />
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\utilities\loader" />
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components" />
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\navbarGenerator" />
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\utilities\colorPicker" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\aboutGenerator" />
+      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\carouselGenerator" />
+      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\utilities" />
+      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\przyklad-html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,6 +100,10 @@
       <workItem from="1566971960542" duration="15440000" />
       <workItem from="1567058739374" duration="6245000" />
       <workItem from="1567080166855" duration="3487000" />
+      <workItem from="1567144763059" duration="3773000" />
+      <workItem from="1567402772586" duration="4557000" />
+      <workItem from="1567419981359" duration="598000" />
+      <workItem from="1567687043017" duration="1252000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1566904483843</created>

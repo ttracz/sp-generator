@@ -67,7 +67,7 @@ export const CarouselGen = (props) => {
                 </div>
                 <div className={'col-1'}>
                     <div className={'text-right'}>
-                        <div><label>Bloki <i className={'fa fa-arrow-down'}/> </label></div>
+                        <div><label>Blok 1 <i className={'fa fa-arrow-down'}/> </label></div>
                         <button className={'btn btn-info'} onClick={() => props.setGeneratorStage(2)}>Dalej <i
                             className={'fa fa-arrow-right'}/></button>
                     </div>
