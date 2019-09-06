@@ -3,3 +3,8 @@
     margin-right: 0px !important;
 }
 
+#gallery img:hover {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}

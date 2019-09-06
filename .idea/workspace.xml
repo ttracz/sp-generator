@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c75bf9bb-4e23-4b09-89f2-667f8cc99c8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/generators/aboutGenerator/AboutGen.js" afterDir="false" />
+    <list default="true" id="c75bf9bb-4e23-4b09-89f2-667f8cc99c8f" name="Default Changelist" comment="Added empty 'About' section generator">
+      <change afterPath="$PROJECT_DIR$/src/components/generators/TextInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GeneratedHtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GeneratedHtml.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/carouselGenerator/CarouselGen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/generators/aboutGenerator/AboutGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/aboutGenerator/AboutGen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/generators/navbarGenerator/NavBarGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/navbarGenerator/NavBarGen.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,18 +48,18 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\aboutGenerator" />
+      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\carouselGenerator" />
+      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\utilities" />
+      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\przyklad-html" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators" />
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\utilities\loader" />
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components" />
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\navbarGenerator" />
       <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\utilities\colorPicker" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\aboutGenerator" />
-      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\components\generators\carouselGenerator" />
-      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\utilities" />
-      <recent name="C:\Users\Tymek\IdeaProjects\bootstrap-generator\src\przyklad-html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -103,7 +106,8 @@
       <workItem from="1567144763059" duration="3773000" />
       <workItem from="1567402772586" duration="4557000" />
       <workItem from="1567419981359" duration="598000" />
-      <workItem from="1567687043017" duration="1252000" />
+      <workItem from="1567687043017" duration="1876000" />
+      <workItem from="1567748891791" duration="9569000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1566904483843</created>
@@ -140,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567067177416</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added empty 'About' section generator">
+      <created>1567688310581</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567688310581</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +176,7 @@
     <MESSAGE value="Carousel (one item only)" />
     <MESSAGE value="Added dynamic font change" />
     <MESSAGE value="Toggleable generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Toggleable generator" />
+    <MESSAGE value="Added empty 'About' section generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added empty 'About' section generator" />
   </component>
 </project>

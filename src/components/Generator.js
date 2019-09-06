@@ -38,6 +38,11 @@ export const Generator = () => {
     const [carouselCaptionColor, setCarouselCaptionColor] = React.useState('#000000')
     const [carouselAutoSlide, setCarouselAutoSlide] = React.useState(true)
     const [carouselInterval, setCarouselInterval] = React.useState("2000")
+    const [sectionOneBackground, setSectionOneBackground] = React.useState('#86bdaf');
+    const [sectionOneTitle, setSectionOneTitle] = React.useState('Tytuł sekcji 1');
+    const [sectionOneDescription, setSectionOneDescription] = React.useState('Przykładowy opis');
+    const [sectionOneText, setSectionOneText] = React.useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui urna, ultrices vel tristique id, vehicula quis mi. Nunc eu varius ante. Praesent fermentum eu felis eu dapibus. Phasellus congue turpis non erat tempus feugiat. Aenean dictum, nibh id placerat dictum, elit ex sollicitudin diam, eu auctor est sapien quis metus. Phasellus pharetra aliquet mauris id ornare. Fusce ut tincidunt neque. Pellentesque lectus elit, aliquam in lacus vitae, lacinia venenatis nisi. Morbi risus libero, vulputate vel mauris auctor, aliquet imperdiet massa. Suspendisse nec felis id mi accumsan consequat eget vel ex.');
+    const [sectionOneColor, setSectionOneColor] = React.useState('#000000');
 
     const setReload = () => {
         setLoader(true)
@@ -62,6 +67,11 @@ export const Generator = () => {
                                                  carouselCaptionColor={carouselCaptionColor}
                                                  carouselAutoSlide={carouselAutoSlide}
                                                  carouselInterval={carouselInterval}
+                                                 sectionOneBackground={sectionOneBackground}
+                                                 sectionOneTitle={sectionOneTitle}
+                                                 sectionOneDescription={sectionOneDescription}
+                                                 sectionOneText={sectionOneText}
+                                                 sectionOneColor={sectionOneColor}
             />}
             <div className={hidden ? 'generatorContainer generatorContainerHidden' : 'generatorContainer'}>
                 <ShowHideBar hidden={hidden} setHidden={e => setHidden(e)}/>
@@ -111,7 +121,17 @@ export const Generator = () => {
                                                      setGeneratorStage={e => setGeneratorStage(e)}
                                                      generatorStage={generatorStage}
                 /> : null}
-                {generatorStage === 2 ? <AboutGen setGeneratorStage={e => setGeneratorStage(e)}
+                {generatorStage === 2 ? <AboutGen setSectionOneBackground={e => setSectionOneBackground(e)}
+                                                  sectionOneBackground={sectionOneBackground}
+                                                  setSectionOneTitle={e => setSectionOneTitle(e)}
+                                                  sectionOneTitle={sectionOneTitle}
+                                                  setSectionOneDescription={e => setSectionOneDescription(e)}
+                                                  sectionOneDescription={sectionOneDescription}
+                                                  setSectionOneText={e => setSectionOneText(e)}
+                                                  sectionOneText={sectionOneText}
+                                                  setSectionOneColor={e => setSectionOneColor(e)}
+                                                  sectionOneColor={sectionOneColor}
+                                                  setGeneratorStage={e => setGeneratorStage(e)}
                                                   generatorStage={generatorStage}
                 /> : null}
             </div>

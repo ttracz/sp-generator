@@ -93,9 +93,9 @@ export const NavBarGen = (props) => {
                 <div className={'col-2'}>
                     <label>Nagłówek zawsze na wierzchu:</label><input type={'checkbox'} checked={props.navbarFixed}
                                                                       onClick={() => setFixed()}/>
-                    <label>Przezroczyste tło nagłówka:</label><input type={'checkbox'}
-                                                                     checked={props.navbarBackground === 'transparent'}
-                                                                     onClick={() => setTransparent()}/>
+                    {/*<label>Przezroczyste tło nagłówka:</label><input type={'checkbox'}*/}
+                    {/*                                                 checked={props.navbarBackground === 'transparent'}*/}
+                    {/*                                                 onClick={() => setTransparent()}/>*/}
                     <label>Linki kapitalikami:</label><input type={'checkbox'}
                                                              checked={props.uppercase === 'text-uppercase'}
                                                              onClick={() => setUppercase()}/>
