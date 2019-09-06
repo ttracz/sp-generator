@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c75bf9bb-4e23-4b09-89f2-667f8cc99c8f" name="Default Changelist" comment="Added empty 'About' section generator">
-      <change afterPath="$PROJECT_DIR$/src/components/generators/TextInput.js" afterDir="false" />
+    <list default="true" id="c75bf9bb-4e23-4b09-89f2-667f8cc99c8f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GeneratedHtml.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GeneratedHtml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/generators/aboutGenerator/AboutGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/aboutGenerator/AboutGen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/generators/navbarGenerator/NavBarGen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/generators/navbarGenerator/NavBarGen.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +103,7 @@
       <workItem from="1567402772586" duration="4557000" />
       <workItem from="1567419981359" duration="598000" />
       <workItem from="1567687043017" duration="1876000" />
-      <workItem from="1567748891791" duration="9569000" />
+      <workItem from="1567748891791" duration="16565000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1566904483843</created>
@@ -151,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567688310581</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="About section (section one) completed, added yet static gallery component">
+      <created>1567763494460</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567763494460</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +180,7 @@
     <MESSAGE value="Added dynamic font change" />
     <MESSAGE value="Toggleable generator" />
     <MESSAGE value="Added empty 'About' section generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added empty 'About' section generator" />
+    <MESSAGE value="About section (section one) completed, added yet static gallery component" />
+    <option name="LAST_COMMIT_MESSAGE" value="About section (section one) completed, added yet static gallery component" />
   </component>
 </project>

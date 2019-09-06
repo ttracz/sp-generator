@@ -68,7 +68,8 @@ export default class GeneratedHtml extends Component {
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
-                <div id={'section1'} style={{background: this.props.sectionOneBackground, color: this.props.sectionOneColor}}>
+                <div id={'section1'}
+                     style={{background: this.props.sectionOneBackground, color: this.props.sectionOneColor}}>
                     <div className={'container'}>
                         <div className={'p-5'}>
                             <div className={'row'}>
@@ -87,25 +88,55 @@ export default class GeneratedHtml extends Component {
                 <div id={'gallery'} style={{background: this.props.galleryBackground}}>
                     <div className={'container-fluid'} style={{paddingLeft: 0, paddingRight: 0}}>
                         <div className={'row'}>
-                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
-                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
-                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
-                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
+                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img
+                                src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
+                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img
+                                src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
+                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img
+                                src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
+                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img
+                                src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
                         </div>
+                    </div>
+                </div>
+                <div id={'map'} className={'container-fluid'} style={{paddingLeft: 0, paddingRight: 0}}>
+                    <div id="map-container-google-1" className="z-depth-1-half map-container" style={{height: 300}}>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.607162976895!2d22.03040231590034!3d50.037456424917096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDAyJzE0LjgiTiAyMsKwMDEnNTcuMyJF!5e0!3m2!1spl!2spl!4v1567765878875!5m2!1spl!2spl"
+                            frameBorder="0"
+                            style={{border: 0, width: '100%', height: '100%'}} allowFullScreen></iframe>
                     </div>
                 </div>
                 <div id={'contact'} style={{background: this.props.contactBackground, color: this.props.contactColor}}>
                     <div className={'container'}>
                         <div className={'p-5'}>
+                            <div className={'text-center'}><h2>{this.props.contactTitle}</h2>
+                                <small>{this.props.contactDescription}</small></div>
+                            <hr/>
                             <div className={'row'}>
-                                <div className={'col-md-6'}>
+                                <div className={'col-md-12'}>
                                     <label>Imię i nazwisko:</label>
-                                    <input type={'text'} name={'imieNazwisko'}/>
-                                </div>
-                                <div className={'col-md-6'}>
-
+                                    <input type={'text'} name={'imieNazwisko'} className={'form-control'}/>
+                                    <label>E-mail:</label>
+                                    <input type={'text'} name={'imieNazwisko'} className={'form-control'}/>
+                                    <label>Treść:</label>
+                                    <textarea type={'text'} rows={6} name={'imieNazwisko'} className={'form-control'}/>
                                 </div>
                             </div>
+                            <div className={'row'}>
+                                <div className={'col-md-12 text-right'}>
+                                    <button className={'btn btn-info'} style={{marginTop: 15}}>Wyślij wiadomość</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id={'footer'} className={'container-fluid footer'}
+                     style={{background: '#4c4c4c', color: '#ffffff'}}>
+                    <div className={'container'} style={{fontSize: '0.875rem'}}>
+                        <div className={'row'}>
+                            <div className={'col-sm-6'}>Copyright by {this.props.copyright}</div>
+                            <div className={'col-sm-6 text-right'}>Powered by spgenerator by ttracz</div>
                         </div>
                     </div>
                 </div>

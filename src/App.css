@@ -8,3 +8,26 @@
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
+
+#contact label {
+    margin-top: 10px;
+}
+
+#map {
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+#map:hover {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+#footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.generatedHTML {
+    margin-bottom: 26px;
+}
