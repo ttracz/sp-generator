@@ -99,14 +99,14 @@ export default class GeneratedHtml extends Component {
                         </div>
                     </div>
                 </div>
-                <div id={'map'} className={'container-fluid'} style={{paddingLeft: 0, paddingRight: 0}}>
+                {this.props.showMap ? <div id={'map'} className={'container-fluid'} style={{paddingLeft: 0, paddingRight: 0}}>
                     <div id="map-container-google-1" className="z-depth-1-half map-container" style={{height: 300}}>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.607162976895!2d22.03040231590034!3d50.037456424917096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDAyJzE0LjgiTiAyMsKwMDEnNTcuMyJF!5e0!3m2!1spl!2spl!4v1567765878875!5m2!1spl!2spl"
+                            src={"https://maps.google.com/maps?q=" + this.props.mapAddress + "&t=&z=13&ie=UTF8&iwloc=&output=embed"}
                             frameBorder="0"
                             style={{border: 0, width: '100%', height: '100%'}} allowFullScreen></iframe>
                     </div>
-                </div>
+                </div> : null}
                 <div id={'contact'} style={{background: this.props.contactBackground, color: this.props.contactColor}}>
                     <div className={'container'}>
                         <div className={'p-5'}>

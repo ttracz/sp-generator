@@ -6,6 +6,8 @@ import {Loader} from "../utilities/loader/Loader";
 import {CarouselGen} from "./generators/carouselGenerator/CarouselGen";
 import {ShowHideBar} from "./generators/ShowHideBar";
 import {AboutGen} from "./generators/aboutGenerator/AboutGen";
+import {GalleryGen} from "./generators/galleryGenerator/GalleryGen";
+import {ContactGen} from "./generators/contactGenerator/ContactGen";
 
 export const Generator = () => {
 
@@ -43,6 +45,11 @@ export const Generator = () => {
     const [sectionOneDescription, setSectionOneDescription] = React.useState('Przykładowy opis');
     const [sectionOneText, setSectionOneText] = React.useState('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui urna, ultrices vel tristique id, vehicula quis mi. Nunc eu varius ante. Praesent fermentum eu felis eu dapibus. Phasellus congue turpis non erat tempus feugiat. Aenean dictum, nibh id placerat dictum, elit ex sollicitudin diam, eu auctor est sapien quis metus. Phasellus pharetra aliquet mauris id ornare. Fusce ut tincidunt neque. Pellentesque lectus elit, aliquam in lacus vitae, lacinia venenatis nisi. Morbi risus libero, vulputate vel mauris auctor, aliquet imperdiet massa. Suspendisse nec felis id mi accumsan consequat eget vel ex.');
     const [sectionOneColor, setSectionOneColor] = React.useState('#000000');
+    const [showMap, setShowMap] = React.useState(true)
+    const [mapAddress, setMapAddress] = React.useState('Warneńczyka 3, Rzeszów')
+    const [contactTitle, setContactTitle] = React.useState('Kontakt')
+    const [contactDescription, setContactDescription] = React.useState('Opis sekcji...')
+    const [contactMail, setContactMail] = React.useState('johndoe@example.com')
 
     const setReload = () => {
         setLoader(true)
@@ -72,6 +79,10 @@ export const Generator = () => {
                                                  sectionOneDescription={sectionOneDescription}
                                                  sectionOneText={sectionOneText}
                                                  sectionOneColor={sectionOneColor}
+                                                 showMap={showMap}
+                                                 mapAddress={encodeURIComponent(mapAddress)}
+                                                 contactTitle={contactTitle}
+                                                 contactDescription={contactDescription}
             />}
             <div className={hidden ? 'generatorContainer generatorContainerHidden' : 'generatorContainer'}>
                 <ShowHideBar hidden={hidden} setHidden={e => setHidden(e)}/>
@@ -133,6 +144,24 @@ export const Generator = () => {
                                                   sectionOneColor={sectionOneColor}
                                                   setGeneratorStage={e => setGeneratorStage(e)}
                                                   generatorStage={generatorStage}
+                /> : null}
+                {generatorStage === 3 ? <GalleryGen
+                    setGeneratorStage={e => setGeneratorStage(e)}
+                    generatorStage={generatorStage}
+                /> : null}
+                {generatorStage === 4 ? <ContactGen
+                    showMap={showMap}
+                    setShowMap={() => setShowMap(!showMap)}
+                    mapAddress={mapAddress}
+                    setMapAddress={e => setMapAddress(e)}
+                    contactTitle={contactTitle}
+                    setContactTitle={e => setContactTitle(e)}
+                    contactDescription={contactDescription}
+                    setContactDescription={e => setContactDescription(e)}
+                    contactMail={contactMail}
+                    setContactMail={e => setContactMail(e)}
+                    setGeneratorStage={e => setGeneratorStage(e)}
+                    generatorStage={generatorStage}
                 /> : null}
             </div>
         </div>
