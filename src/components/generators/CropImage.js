@@ -1,47 +1,90 @@
-import React, {Component} from 'react'
+import React from 'react'
+import 'react-image-crop/dist/ReactCrop.css';
+import ReactCrop from "react-image-crop";
 
-export default class CropImage extends Component {
+export default class CropImage extends React.Component {
 
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
-            text: this.props.text
+            crop: {
+                unit: "%",
+                width: 400,
+                aspect: 6 / 4
+            },
+            croppedImageUrl: ''
         }
     }
 
-    handleChange(e) {
-        this.setState({text: e.target.value})
+    onImageLoaded = image => {
+        this.imageRef = image;
+    };
+
+    onCropComplete = crop => {
+        this.makeClientCrop(crop);
+    };
+
+    async makeClientCrop(crop) {
+        if (this.imageRef && crop.width && crop.height) {
+            const croppedImageUrl = await this.getCroppedImg(
+                this.imageRef,
+                crop,
+                "newFile.jpeg"
+            );
+            this.setState({croppedImageUrl: croppedImageUrl});
+        }
     }
 
-    saveText(){
-        this.props.setText(this.state.text)
+    getCroppedImg = (image, pixelCrop, fileName) => {
+        const canvas = document.createElement("canvas");
+        canvas.width = pixelCrop.width;
+        canvas.height = pixelCrop.height;
+        const ctx = canvas.getContext("2d");
+
+        ctx.drawImage(
+            image,
+            pixelCrop.x,
+            pixelCrop.y,
+            pixelCrop.width,
+            pixelCrop.height,
+            0,
+            0,
+            pixelCrop.width,
+            pixelCrop.height
+        );
+
+        const base64Image = canvas.toDataURL('image/jpeg');
+        return base64Image
+    }
+
+    onCropChange = (crop, percentCrop) => {
+        this.setState({crop});
+    };
+
+    saveGalleryImage() {
+        let galleryImages = this.props.images
+        galleryImages[this.props.index].image = this.state.croppedImageUrl
+        this.props.setImages(galleryImages)
         this.props.closeModal()
     }
 
     render() {
         return <div className={'linkInput'}>
-            <div className={'link'}>
-                <div className={'row'}>
-                    <div className={'col-12'}>
-                        <label>Treść sekcji:</label>
-                    </div>
-                </div>
-                <div className={'row'}>
-                    <div className={'col-12'}>
-                        <textarea className={'form-control'} name={'title'} rows={12} defaultValue={this.props.text}
-                               onChange={(e) => this.handleChange(e)}/>
-                    </div>
-                </div>
-            </div>
+            <ReactCrop src={this.props.imageSrc}
+                       crop={this.state.crop}
+                       onImageLoaded={this.onImageLoaded}
+                       onComplete={this.onCropComplete}
+                       onChange={this.onCropChange}/>
             <div className={'row buttonContainer'}>
                 <div className={'col-12 text-right'}>
                     <button className={'btn btn-danger'} onClick={() => this.props.closeModal()}>Anuluj</button>
                     <button className={'btn btn-success'} type="submit" style={{marginLeft: 5}}
-                            onClick={() => this.saveText()}>Zapisz
+                            onClick={() => this.saveGalleryImage()}>Zapisz
                     </button>
                 </div>
             </div>
         </div>
     }
+
 }

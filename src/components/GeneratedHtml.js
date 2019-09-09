@@ -2,6 +2,13 @@ import React, {Component} from 'react'
 
 export default class GeneratedHtml extends Component {
 
+    openImage(src){
+        let image = new Image()
+        image.src = src;
+        let w = window.open("");
+        w.document.write(image.outerHTML);
+    }
+
     render() {
         return <>
             <style>
@@ -88,14 +95,10 @@ export default class GeneratedHtml extends Component {
                 <div id={'gallery'} style={{background: this.props.galleryBackground}}>
                     <div className={'container-fluid'} style={{paddingLeft: 0, paddingRight: 0}}>
                         <div className={'row'}>
-                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img
-                                src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
-                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img
-                                src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
-                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img
-                                src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
-                            <div className={'col-md-3'} style={{paddingLeft: 0, paddingRight: 0}}><img
-                                src={'https://dummyimage.com/600x400/4f4f4f/fff'} className={'img-fluid'}/></div>
+                            {this.props.images.map((item, i) => {
+                                return  <div className={'col-md-3'} onClick={()=>this.openImage(item.image)} style={{paddingLeft: 0, paddingRight: 0}}><img
+                                    src={item.image} className={'img-fluid'}/></div>
+                            })}
                         </div>
                     </div>
                 </div>
