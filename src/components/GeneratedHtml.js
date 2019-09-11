@@ -17,7 +17,7 @@ export default class GeneratedHtml extends Component {
                 {this.props.fontFamily === 'Lato, sans-serif' ? "@import url('https://fonts.googleapis.com/css?family=Lato&display=swap')" : null};
                 {this.props.fontFamily === 'Montserrat, sans-serif' ? "@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap')" : null};
             </style>
-            <div className={'generatedHTML'} style={{fontFamily: this.props.fontFamily}}>
+            <div id="generatedHTML" className={'generatedHTML'} style={{fontFamily: this.props.fontFamily}}>
                 <nav className={"navbar navbar-expand-lg navbar-light " + this.props.navbarFixed} id="mainNav"
                      style={{background: this.props.navbarBackground}}>
                     <div className="container">

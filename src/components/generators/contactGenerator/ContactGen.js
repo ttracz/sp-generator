@@ -36,7 +36,7 @@ export const ContactGen = (props) => {
                 <div className={'col-1'}>
                     <div className={'text-right'}>
                         <div><label>Podsumowanie <i className={'fa fa-arrow-down'}/> </label></div>
-                        <button className={'btn btn-info'} onClick={() => props.setGeneratorStage(5)}>Dalej <i
+                        <button className={'btn btn-info'} onClick={() => props.generateWebsite()}>Dalej <i
                             className={'fa fa-arrow-right'}/></button>
                     </div>
                 </div>

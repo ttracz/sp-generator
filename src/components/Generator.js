@@ -68,6 +68,63 @@ export const Generator = () => {
         }, 250)
     }
 
+    const generateWebsite = () => {
+        let w = window.open("");
+        console.log(document.getElementById('generatedHTML').innerHTML)
+        w.document.write(
+            "<html lang=\"en\">\n" +
+            "  <head>\n" +
+            "    <meta charset=\"utf-8\">\n" +
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n" +
+            "\n" +
+            "    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n" +
+            "\n" +
+            "    <title>Hello, world!</title>\n" +
+            "  </head>\n" +
+            "<style>" +
+            ".row {\n" +
+            "    margin-left: 0px !important;\n" +
+            "    margin-right: 0px !important;\n" +
+            "}\n" +
+            "\n" +
+            "#gallery img:hover {\n" +
+            "    opacity: 0.7;\n" +
+            "    transition: 0.3s ease-in-out;\n" +
+            "    cursor: pointer;\n" +
+            "}\n" +
+            "\n" +
+            "#contact label {\n" +
+            "    margin-top: 10px;\n" +
+            "}\n" +
+            "\n" +
+            "#map {\n" +
+            "    filter: grayscale(100%);\n" +
+            "    opacity: 0.7;\n" +
+            "}\n" +
+            "\n" +
+            "#map:hover {\n" +
+            "    opacity: 1;\n" +
+            "    transition: 0.3s ease-in-out;\n" +
+            "}\n" +
+            "\n" +
+            "#footer {\n" +
+            "    padding-top: 25px;\n" +
+            "    padding-bottom: 25px;\n" +
+            "}\n" +
+            "\n" +
+            ".generatedHTML {\n" +
+            "    margin-bottom: 26px;\n" +
+            "}\n" +
+            "</style>" +
+            "  <body>"
+            + document.getElementById('generatedHTML').innerHTML +
+            "<script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n" +
+        "    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>\n" +
+        "    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>\n" +
+        "  </body>\n" +
+        "</html>")
+    }
+
     return (
         <div className="App">
             {loader ? <Loader/> : <GeneratedHtml navbarBackground={navbarBackground}
@@ -181,6 +238,7 @@ export const Generator = () => {
                     setContactMail={e => setContactMail(e)}
                     setGeneratorStage={e => setGeneratorStage(e)}
                     generatorStage={generatorStage}
+                    generateWebsite={()=>generateWebsite()}
                 /> : null}
             </div>
         </div>
